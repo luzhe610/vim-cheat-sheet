@@ -17,9 +17,9 @@ cursorMovement:
     w: "移动到下个单词开头"
     W: "移动到下个单词开头(单词含标点)"
     e: "移动到下个单词结尾"
-    E: "移动到下个单词结尾(单词含标点)"
-    b: "移动到上个单词结尾"
-    B: "移动到上个单词结尾(单词含标点)"
+    E: "移动到下个单词结尾(单词含点)"
+    b: "移动到上个单词开头"
+    B: "移动到上个单词开头(单词含标点)"
     zero: "移动到行首"
     caret: "移动到行首的非空白符"
     dollar: "移动到行尾"
@@ -36,6 +36,7 @@ cursorMovement:
     CtrlPlusf: "向前滚动一屏"
     CtrlPlusu: "向后滚动半屏"
     CtrlPlusd: "向前滚动半屏"
+    percent: "移动到对应的字符(默认支持的成对符号: '()', '{}', '[]',在 vim 中使用<code>:h matchpairs</code>了解更多)"
   tip: "命令前追加数字表示命令的重复次数, 比如 <kbd>4j</kbd> 表示向下移动四行"
 
 insertMode:
@@ -121,6 +122,7 @@ global:
     openFile: "打开文件"
     saveAsFile: "另存为"
     closePane: "关闭当前窗口"
+    K: "打开光标下单词的手册页面"
 
 cutAndPaste:
   title: "剪切, 复制, 粘贴"
